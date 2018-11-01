@@ -1,8 +1,8 @@
 const quaseArray = {
-    0: 'Isaias',
+    0: 'Silvia',
     1: 'Paulo',
-    2: 'Lorelei',
-    3: 'Gray'
+    2: 'José',
+    3: 'Fernanda'
 }
 
 
@@ -17,7 +17,7 @@ Object.defineProperty(quaseArray, 'toString', {
 
 console.log(quaseArray);
 
-const myArray = ['Júlia Arraes','Letícia Santos', 'Beatriz', 'Vitória'];
+const myArray = ['Júlia','Letícia', 'Beatriz', 'Vitória'];
 console.log(myArray.toString(), myArray);
 
 
