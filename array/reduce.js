@@ -48,7 +48,7 @@ const alunos = [
 // console.log(sum);
 
 const maiorN = alunos.reduce((accumulatedValue, currentValue) => {
-    console.log(accumulatedValue, currentValue.nota);
+    // console.log(accumulatedValue, currentValue.nota);
 
     if (accumulatedValue < currentValue.nota) {
         accumulatedValue = currentValue.nota
@@ -56,4 +56,36 @@ const maiorN = alunos.reduce((accumulatedValue, currentValue) => {
     return accumulatedValue 
 }, 0)  // <= inicia o accumulatedValue com o valor 0
 
-console.log(`maior nota é ${maiorN}`);
+// console.log(`maior nota é ${maiorN}`);
+
+
+// const search2 = alunos.reduce((acumula, atual) => {
+//     // console.log(acumula,atual.nome);
+//     console.log(acumula,atual.nome);
+   
+//     if (atual.nome == 'Isaias') {
+//         acumula = 'Isaias'
+//     }
+//     return acumula
+// })
+
+// console.log('Existe ' + search2);
+
+const algumBosista = (res, bolsita) => res || bolsita;
+
+const searchName = (res, name) => {
+    res = name
+    if (res == 'Caio') {
+        return true;
+    }return false
+}
+
+const todosBolsistas = (resultado,bolsista) => resultado && bolsista;
+
+console.log(alunos.map(a => a.bolsista).reduce(todosBolsistas));
+
+console.log(alunos.map(a => a.bolsista).reduce(algumBosista));
+
+console.log(alunos.map(a => a.nome).reduce(searchName));
+
+qui sit non
